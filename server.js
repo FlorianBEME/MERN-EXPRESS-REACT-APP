@@ -17,6 +17,5 @@ app.get('/api', (req, res) => {
 
 app.listen(5000, () => {
     console.log(`server run on ${PORT} `)
-    console.log(`Test`)
 })
 
