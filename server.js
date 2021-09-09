@@ -6,16 +6,17 @@ const app = express();
 
 app.use(express.json());
 
-app.use(express.static('client/build'));
+// app.use(express.static('client/build'));
 
 app.get('/api', (req, res) => {
     res.send({msg: "hello"})
 })
-app.get('/*', (_, res) => {
-    res.sendFile(path.join(__dirname, './client/build/index.html'))
-})
+// app.get('/*', (_, res) => {
+//     res.sendFile(path.join(__dirname, './client/build/index.html'))
+// })
 
 app.listen(5000, () => {
-    console.log(`server run on ${PORT}`)
+    console.log(`server run on ${PORT} `)
+    console.log(`Test`)
 })
 
